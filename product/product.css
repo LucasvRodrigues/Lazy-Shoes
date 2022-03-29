@@ -1,0 +1,105 @@
+*{
+    font-family: arial;
+}
+
+footer {
+    background:#FEFEFE !important;
+}
+
+.main_neon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom,#07252d 0,#07252d 75%,#07252d9a 80%,#07252d6c 85%,#07252d48 90%,#FEFEFE 100%);
+}
+
+.btn_contact {
+    margin-top: 100px;
+    text-decoration: none;
+
+}
+
+.context_btn {
+    position: relative;
+    font-size: 1em;
+    letter-spacing: 15px;
+    color: #0e3742;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    border: currentColor 0.125em solid;
+    padding: 0.25em 1em;
+    border-radius: 0.25em;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,#0004);
+    line-height: 0.70em;
+    outline: none;
+    animation: neon 5s linear infinite;
+
+}
+
+.context_neon {
+    position: relative;
+    font-size: 5em;
+    letter-spacing: 15px;
+    color: #0e3742;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,#0004);
+    line-height: 0.70em;
+    outline: none;
+    animation: neon 5s linear infinite;
+}
+
+.title {
+    position: relative;
+    font-size: 5em;
+    letter-spacing: 15px;
+    color: #0e3742;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,#0004);
+    line-height: 0.70em;
+    outline: none;
+}
+
+.context_p {
+    margin-top: 100px;
+    font-size: 1.5em;
+    position: relative;
+    text-align: center;
+}
+
+@keyframes neon {
+    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92% {
+        color: #0e3742;
+        text-shadow: none;
+    }
+    18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100% {
+        color: #fff;
+        text-shadow: 0 0 10px #03bcf4, 0 0 20px #03bcf4, 0 0 40px #03bcf4, 0 0 80px #03bcf4, 0 0 160px #03bcf4;
+
+    }
+}
+
+@media screen and (max-width: 400px) {
+.title{
+    font-size: 2.5em;
+    letter-spacing: 5px;
+    line-height: 1.5em;
+    -webkit-box-reflect:unset;
+}
+.context_neon{
+    line-height: 1.5em;
+    font-size: 2.5em;
+    letter-spacing: 5px;
+    -webkit-box-reflect:unset;
+}
+.context_btn {
+    letter-spacing: 5px;
+}
+
+}

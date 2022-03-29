@@ -1,0 +1,99 @@
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+main {
+    display: block;
+    background-color: #FFF;
+}
+
+.container1 {
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section.module p{
+    margin-bottom: 40px;
+}
+
+section.module:last-child{
+    margin-bottom: 0;
+}
+
+section.module h2{
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+
+section.module.content {
+    padding: 40px 0;
+    background: rgb(199, 198, 135);
+}
+
+section.module.parallax {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 75vw !important;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+section.module.parallax:after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 8;
+    background: -moz-linear-gradient(to bottom,rgb(0,0,0,0) 0,rgb(0,0,0,0) 40%, #000000 100%);
+    background: -o-linear-gradient(to bottom,rgb(0,0,0,0) 0,rgb(0,0,0,0) 40%, #000000 100%);
+    background: -webkit-linear-gradient(to bottom,rgb(0,0,0,0) 0,rgb(0,0,0,0) 40%, #000000 100%);
+    background: linear-gradient(to bottom,rgb(0,0,0,0) 0,rgb(0,0,0,0) 40%, #000000 100%);
+}
+
+section.module.parallax2{
+    background-image: url("https://img.freepik.com/fotos-gratis/elegante-empresario-careca-em-oculos-de-sol-esta-fumando-vaporizador-enquanto-esta-sentado-em-sua-bicicleta-eletrica_613910-3292.jpg?t=st=1648237270~exp=1648237870~hmac=99b67dbdde6556462f68f43cdf385164565c5e6a902cfd5449e66d4319627751&w=1060");
+    height: 50vw !important;
+}
+
+section.module.parallax3{
+    background-image: url("https://wallpaperaccess.com/full/1211965.jpg");
+    height: 50vw !important;
+}
+
+section.module.parallax h1{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 78px;
+    z-index: 50;
+    text-transform: uppercase;
+}
+
+body footer{
+    display:flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    min-height: 50vh;
+    background: linear-gradient(to bottom,rgb(199, 198, 135) 0,#FEFEFE 30%,#FEFEFE 75%,#FEFEFE 100%)!important;
+}
+
+
+@media screen and (max-width: 400px) {
+section.module.parallax h1 {
+    font-size: 27px;
+}
+section.module h2 {
+    font-size: 21px;
+}
+}
